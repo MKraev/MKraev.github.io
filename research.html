@@ -1,0 +1,82 @@
+---
+title: Research
+heading: Research
+eyebrow: PhD · Bulgarian Academy of Sciences
+permalink: /research/
+description: PhD research by Milen Kraev on agentic AI for large data management systems, digital libraries and cultural heritage data.
+lead: My doctoral thesis, “Agentic AI in large data management systems”, studies how teams of specialised AI agents can help people find, understand and trust information in large digital collections.
+---
+<section class="section-tight">
+  <h2 class="section-title">Research interests</h2>
+  <ul class="chips chips-lg">
+    <li>Agentic AI &amp; multi-agent orchestration</li>
+    <li>Retrieval-augmented generation (RAG)</li>
+    <li>Hybrid search &amp; metadata quality</li>
+    <li>Verifiable, cited answers</li>
+    <li>Knowledge graphs</li>
+    <li>Digital libraries &amp; cultural heritage data</li>
+    <li>Evaluation of AI assistants</li>
+  </ul>
+</section>
+
+<section class="section-tight">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid grid-2">
+    <article class="card">
+      <p class="eyebrow">Thesis prototype</p>
+      <h3>LibAssist — an agent-based assistant for digital libraries</h3>
+      <p>
+        An assistant that answers readers' questions <strong>only from the documents in the library</strong>. Every
+        answer is structured: a short answer, claims linked to the cited passages, sources, a confidence level and
+        stated limitations. When the collection doesn't contain enough evidence, the assistant declines honestly and
+        points to the closest documents.
+      </p>
+      <ul class="check-list">
+        <li>Hybrid retrieval over prepared library resources</li>
+        <li>Six specialised agents with dynamic orchestration and checkpoints</li>
+        <li>Library-independent: everything specific lives in a profile and adapters</li>
+        <li>Evaluation framework with a series of controlled experiments</li>
+      </ul>
+    </article>
+    <article class="card">
+      <p class="eyebrow">Platform contribution</p>
+      <h3>AI module for the CultIS platform</h3>
+      <p>
+        CultIS is a web platform for intelligent management and presentation of large datasets and knowledge in
+        culture, the humanities and social sciences. I work on its AI module: a retrieval-augmented assistant that
+        answers questions from the platform's own content index, with model providers that can be swapped.
+      </p>
+      <ul class="check-list">
+        <li>RAG over the platform's content index</li>
+        <li>Pluggable local and cloud model providers</li>
+        <li>Research into reliability and domain limits of heritage chatbots</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section-tight">
+  <h2 class="section-title">Publications</h2>
+  <ol class="pub-list">
+    {% for p in site.data.publications %}
+    <li>
+      <p class="pub-title">{% if p.link != "" %}<a href="{{ p.link }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+      <p class="muted small">{{ p.authors }} · <em>{{ p.venue }}</em>, {{ p.year }} · {{ p.type }}{% if p.pdf %} · <a href="{{ p.pdf | relative_url }}">PDF</a>{% endif %}</p>
+    </li>
+    {% endfor %}
+  </ol>
+  {% if site.author.scholar != "" or site.author.orcid != "" %}
+  <p class="small">Full list: {% if site.author.scholar != "" %}<a href="{{ site.author.scholar }}">Google Scholar</a>{% endif %}{% if site.author.orcid != "" %} · <a href="{{ site.author.orcid }}">ORCID</a>{% endif %}</p>
+  {% endif %}
+</section>
+
+<section class="section-tight">
+  <div class="callout">
+    <h2>Collaboration</h2>
+    <p>
+      I'm interested in collaborations with libraries, archives, museums and research groups that want to make large
+      collections accessible through trustworthy AI — and in industry partners exploring agentic AI over their own
+      document data. <a href="{{ '/contact/' | relative_url }}">Get in touch</a>.
+    </p>
+  </div>
+</section>

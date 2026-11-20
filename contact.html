@@ -1,0 +1,49 @@
+---
+title: Contact
+heading: Get in touch
+eyebrow: Contact
+permalink: /contact/
+description: Contact Milen Kraev about delivery leadership roles, consulting engagements or research collaboration.
+lead: The fastest way to reach me is by email or LinkedIn. I usually reply within a couple of working days.
+hide_contact_band: true
+---
+<section class="section-tight">
+  <div class="grid grid-3">
+    <a class="card card-link contact-card" href="mailto:{{ site.author.email }}">
+      {% include icon.html name='mail' %}
+      <h3>Email</h3>
+      <p>{{ site.author.email }}</p>
+    </a>
+    <a class="card card-link contact-card" href="{{ site.author.linkedin }}" target="_blank" rel="noopener">
+      {% include icon.html name='linkedin' %}
+      <h3>LinkedIn</h3>
+      <p>linkedin.com/in/milenkraev</p>
+    </a>
+    <div class="card contact-card">
+      {% include icon.html name='pin' %}
+      <h3>Location</h3>
+      <p>{{ site.author.location }} · open to remote and hybrid work across Europe</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <h2 class="section-title">To help me reply quickly, please mention</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Roles</h3>
+      <p>The company, the role and its scope, team size, location or remote setup, and the timeline.</p>
+      <a class="small" href="mailto:{{ site.author.email }}?subject=Role%20opportunity">Email about a role →</a>
+    </div>
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>The problem you're solving, the expected outcome, duration and any deadlines or constraints.</p>
+      <a class="small" href="mailto:{{ site.author.email }}?subject=Consulting%20enquiry">Email about a project →</a>
+    </div>
+    <div class="card">
+      <h3>Research</h3>
+      <p>Your institution, the collection or data involved and the kind of collaboration you have in mind.</p>
+      <a class="small" href="mailto:{{ site.author.email }}?subject=Research%20collaboration">Email about research →</a>
+    </div>
+  </div>
+</section>

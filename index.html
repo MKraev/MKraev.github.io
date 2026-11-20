@@ -1,0 +1,106 @@
+---
+layout: default
+title: Delivery lead in payments & fintech · PhD researcher in agentic AI
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Payments · Fintech · Agentic AI research</p>
+      <h1>Complex technology programmes, turned into plans that deliver.</h1>
+      <p class="lead">
+        I'm {{ site.author.name }}. I lead project and product delivery for payment platforms —
+        core banking migrations, Visa and Mastercard deliveries, PCI-DSS compliance — and I'm completing
+        a PhD at the Bulgarian Academy of Sciences on agentic AI for large data management systems.
+      </p>
+
+      {% if site.open_to_work.enabled or site.freelance.enabled %}
+      <ul class="status-list">
+        {% if site.open_to_work.enabled %}<li class="pill"><span class="dot dot-green"></span>{{ site.open_to_work.note }}</li>{% endif %}
+        {% if site.freelance.enabled %}<li class="pill"><span class="dot dot-blue"></span>{{ site.freelance.note }}</li>{% endif %}
+      </ul>
+      {% endif %}
+
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ '/about/' | relative_url }}">Experience &amp; CV {% include icon.html name='arrow' %}</a>
+        <a class="btn" href="{{ '/services/' | relative_url }}">Work with me</a>
+        <a class="btn btn-ghost" href="{{ '/research/' | relative_url }}">Research</a>
+      </div>
+    </div>
+
+    <aside class="profile-card">
+      {% include avatar.html %}
+      <p class="profile-name">{{ site.author.name }}</p>
+      <p class="muted small">{{ site.author.role }} · {{ site.author.location }}</p>
+      <dl class="facts">
+        <div><dt>10+</dt><dd>years in banking, payments &amp; fintech</dd></div>
+        <div><dt>10–20</dt><dd>specialists per virtual delivery team</dd></div>
+        <div><dt>PSM</dt><dd>Professional Scrum Master</dd></div>
+        <div><dt>PhD</dt><dd>Computer Science, expected 2026</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">How we can work together</h2>
+    <div class="grid grid-3">
+      <a class="card card-link" href="{{ '/about/' | relative_url }}">
+        {% include icon.html name='briefcase' %}
+        <h3>Hiring a delivery leader</h3>
+        <p>Programme and portfolio delivery, team leadership and stakeholder management in regulated payments environments.</p>
+        <span class="card-cta">See experience {% include icon.html name='arrow' %}</span>
+      </a>
+      <a class="card card-link" href="{{ '/services/' | relative_url }}">
+        {% include icon.html name='handshake' %}
+        <h3>Consulting &amp; freelance</h3>
+        <p>Interim delivery lead, payments and card-scheme expertise, business analysis and AI-assistant prototypes.</p>
+        <span class="card-cta">See services {% include icon.html name='arrow' %}</span>
+      </a>
+      <a class="card card-link" href="{{ '/research/' | relative_url }}">
+        {% include icon.html name='book' %}
+        <h3>Research collaboration</h3>
+        <p>Agentic AI, retrieval-augmented generation and knowledge graphs for digital libraries and cultural heritage data.</p>
+        <span class="card-cta">See research {% include icon.html name='arrow' %}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Selected delivery experience</h2>
+    <div class="grid grid-2 highlights">
+      <div class="highlight">
+        <h3>Core payment system migration</h3>
+        <p>Leading the project management function for the migration of a client's core payment system at Worldline.</p>
+      </div>
+      <div class="highlight">
+        <h3>Visa &amp; Mastercard deliveries</h3>
+        <p>Card-scheme deliveries planned and governed across multi-country virtual teams.</p>
+      </div>
+      <div class="highlight">
+        <h3>PCI-DSS &amp; data retention</h3>
+        <p>Compliance workstreams with clear ownership, risk tracking and audit-ready reporting.</p>
+      </div>
+      <div class="highlight">
+        <h3>Regulatory &amp; SLA reporting</h3>
+        <p>SLA measurement, incident management and reporting to central banks and card schemes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if site.posts.size > 0 %}
+<section class="section">
+  <div class="container narrow">
+    <div class="section-head">
+      <h2 class="section-title">Latest writing</h2>
+      <a class="link-arrow" href="{{ '/blog/' | relative_url }}">All posts {% include icon.html name='arrow' %}</a>
+    </div>
+    {% include post-list.html limit=3 %}
+  </div>
+</section>
+{% endif %}
+
+{% include contact-band.html %}

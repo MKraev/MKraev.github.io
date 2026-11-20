@@ -1,0 +1,37 @@
+- group: Delivery & leadership
+  items:
+    - Project & programme delivery (Waterfall, Agile/Scrum, hybrid)
+    - Portfolio governance & risk management
+    - Resource & workforce planning
+    - Stakeholder & vendor management
+    - Team leadership & coaching
+    - Incident management & SLA reporting
+
+- group: Product & analysis
+  items:
+    - Product management
+    - Business analysis & requirements engineering
+    - Technical specifications
+    - Test documentation & UAT
+
+- group: Payments & compliance
+  items:
+    - Visa & Mastercard deliveries
+    - Core payment system migration
+    - Payment gateways & issuing infrastructure
+    - PCI-DSS, data retention
+    - SEPA, SWIFT
+    - T24 core banking
+
+- group: Tools & technology
+  items:
+    - Jira, Confluence, ServiceNow
+    - SQL, SPSS
+    - Python (basics), Java
+    - RAG & multi-agent LLM systems
+
+- group: Certifications & languages
+  items:
+    - Professional Scrum Master (PSM)
+    - Bulgarian — native
+    - English — professional

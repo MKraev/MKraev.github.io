@@ -1,0 +1,32 @@
+# Publications — newest first.
+# !! Compiled from the folder names in "PHD/Conferences and papers/Статии/0_Published".
+# !! Check the exact titles, co-authors and venue names, and add links/DOIs.
+#
+# Fields: title, authors, venue, year, type, link (DOI or URL), pdf (path in assets/files)
+- title: Design of Digital Assistance Enhancing Digital Cultural Heritage Libraries
+  authors: M. Kraev
+  venue: CLaDA 2026
+  year: 2026
+  type: Extended abstract
+  link: ""
+
+- title: Reliability and Domain Limitations of AI Virtual Assistants in Digital Heritage Systems
+  authors: M. Kraev
+  venue: Digital Presentation and Preservation of Cultural and Scientific Heritage (DiPP 2026)
+  year: 2026
+  type: Conference paper
+  link: ""
+
+- title: Enhancing Full-Text Search Precision Through Advanced Harvesting and Metadata Optimization
+  authors: M. Kraev et al.
+  venue: ACDSA 2026
+  year: 2026
+  type: Conference paper
+  link: ""
+
+- title: "Unveiling Knowledge Graph Innovations: State-of-the-Art Technologies for Cultural Heritage Data Access"
+  authors: M. Kraev
+  venue: Digital Presentation and Preservation of Cultural and Scientific Heritage (DiPP 2025)
+  year: 2025
+  type: Conference paper
+  link: ""

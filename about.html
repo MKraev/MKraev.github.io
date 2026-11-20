@@ -1,0 +1,74 @@
+---
+title: About & CV
+heading: About
+eyebrow: Experience · Education · Skills
+permalink: /about/
+description: Experience, education and skills of Milen Kraev — project and product delivery lead in payments and fintech.
+lead: Delivery-focused lead with 10+ years managing complex technology and transformation programmes across banking, payments and fintech.
+---
+<div class="cv">
+  <div class="cv-main">
+    <section class="cv-section">
+      <h2>Profile</h2>
+      <p>
+        I lead the Project Management function within a global product organisation, running virtual delivery teams of
+        10–20 specialists across core banking migrations, card-scheme deliveries and regulatory compliance programmes.
+        My strengths are delivery governance, resource and risk management, and translating stakeholder priorities into
+        realistic, achievable plans within hybrid Agile environments.
+      </p>
+      <p>
+        In parallel I'm completing a PhD in Computer Science at the Bulgarian Academy of Sciences, researching how
+        agentic AI can make large data collections easier to search, understand and trust.
+      </p>
+      <div class="actions no-print">
+        {% if site.author.cv != "" %}
+          <a class="btn btn-primary" href="{{ site.author.cv | relative_url }}" download>{% include icon.html name='download' %} Download CV (PDF)</a>
+        {% endif %}
+        <button class="btn" type="button" onclick="window.print()">Print this page</button>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        {% for job in site.data.experience %}
+        <li class="timeline-item">
+          <div class="timeline-head">
+            <h3>{{ job.role }}</h3>
+            <span class="period">{{ job.start }} – {{ job.end }}</span>
+          </div>
+          <p class="org">{{ job.company }} · {{ job.location }}</p>
+          <ul>
+            {% for h in job.highlights %}<li>{{ h }}</li>{% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+  </div>
+
+  <aside class="cv-side">
+    <section class="cv-section">
+      <h2>Education</h2>
+      <ul class="plain-list">
+        {% for e in site.data.education %}
+        <li>
+          <strong>{{ e.degree }}</strong>
+          <span class="muted">{{ e.school }}</span>
+          {% if e.note %}<span class="small">{{ e.note }}</span>{% endif %}
+          {% if e.period != "" %}<span class="small muted">{{ e.period }}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    {% for g in site.data.skills %}
+    <section class="cv-section">
+      <h2>{{ g.group }}</h2>
+      <ul class="chips">
+        {% for s in g.items %}<li>{{ s }}</li>{% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </aside>
+</div>

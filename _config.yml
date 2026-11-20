@@ -1,0 +1,88 @@
+# ---------------------------------------------------------------
+#  Site settings — this is the only file you normally need to edit
+#  (plus the YAML files in _data/ and the posts in _posts/).
+#  After editing _config.yml locally, restart `jekyll serve`.
+# ---------------------------------------------------------------
+
+title: Milen Kraev
+tagline: Delivery lead in payments & fintech · PhD researcher in agentic AI
+description: >-
+  Milen Kraev — project and product delivery lead with 10+ years in banking,
+  payments and fintech, and PhD researcher at the Bulgarian Academy of Sciences
+  working on agentic AI for large data management systems.
+lang: en
+timezone: Europe/Sofia
+
+# On GitHub Pages `url` and `baseurl` are filled in automatically — leave them
+# commented out. Only uncomment `url` once you use a custom domain:
+# url: https://milenkraev.com
+# baseurl: ""
+
+author:
+  name: Milen Kraev
+  initials: MK
+  role: Team Lead, Project & Product Management
+  email: kraevmilen@gmail.com
+  location: Sofia, Bulgaria
+  linkedin: https://www.linkedin.com/in/milenkraev/
+  github: ""        # e.g. https://github.com/<username>
+  orcid: ""         # e.g. https://orcid.org/0000-0000-0000-0000
+  scholar: ""       # Google Scholar profile URL
+  researchgate: ""
+  # Put the files in assets/ and uncomment / fill in:
+  photo: ""         # e.g. /assets/img/profile.jpg  (square, ~600x600)
+  cv: ""            # e.g. /assets/files/Milen_Kraev_Resume.pdf
+
+# Status badges shown on the home page. Set enabled: false to hide.
+open_to_work:
+  enabled: true
+  note: Open to senior delivery, programme and product leadership roles
+freelance:
+  enabled: true
+  note: Available for selected consulting engagements
+
+# When you register a company, fill this in — it appears in the footer
+# and on the Services page.
+business:
+  name: ""          # e.g. "Kraev Consulting Ltd."
+  registration: ""  # e.g. "EIK 123456789, VAT BG123456789"
+
+# Social card / SEO
+social:
+  name: Milen Kraev
+  links:
+    - https://www.linkedin.com/in/milenkraev/
+
+# ---------------------------------------------------------------
+#  Build settings — no need to touch these
+# ---------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /blog/:year/:month/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+feed:
+  path: feed.xml
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - LICENSE
+  - assets/files/README.txt

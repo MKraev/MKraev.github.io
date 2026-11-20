@@ -1,0 +1,26 @@
+---
+title: Blog
+heading: Writing
+eyebrow: Blog
+permalink: /blog/
+description: Notes by Milen Kraev on delivery management, payments, and agentic AI research.
+lead: Notes on delivering complex programmes, payments and fintech, and what I'm learning about agentic AI.
+---
+<div class="narrow">
+  {% if site.categories.size > 1 %}
+  <div class="filters no-print" role="group" aria-label="Filter posts by category">
+    <button type="button" class="filter is-active" data-filter="all">All</button>
+    {% for cat in site.categories %}
+      <button type="button" class="filter" data-filter="{{ cat[0] | slugify }}">{{ cat[0] }}</button>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if site.posts.size > 0 %}
+    {% include post-list.html %}
+  {% else %}
+    <p class="muted">No posts yet — check back soon.</p>
+  {% endif %}
+
+  <p class="small muted">Subscribe via <a href="{{ '/feed.xml' | relative_url }}">RSS</a>.</p>
+</div>

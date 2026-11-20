@@ -1,0 +1,36 @@
+# Consulting offers shown on the Services page.
+- title: Interim delivery & programme lead
+  icon: compass
+  summary: Hands-on leadership for programmes that need a steady owner — from plan and governance to go-live.
+  points:
+    - Delivery plans, milestones and dependency maps that hold up under pressure
+    - Risk, issue and escalation management with clear owners
+    - Steering-committee reporting that executives actually read
+    - Coaching for project managers and Scrum teams
+
+- title: Payments & card-scheme consulting
+  icon: card
+  summary: Practical expertise from core payment migrations, Visa and Mastercard deliveries and regulatory reporting.
+  points:
+    - Card-scheme mandates and release readiness
+    - Core payment system and gateway migrations
+    - PCI-DSS and data-retention workstreams
+    - SLA, incident and central-bank reporting set-up
+
+- title: Business analysis & product discovery
+  icon: layers
+  summary: Turning stakeholder needs into specifications engineering teams can build from.
+  points:
+    - Requirements workshops and process mapping
+    - Functional and technical specifications
+    - Backlog shaping, prioritisation and acceptance criteria
+    - Test strategy and UAT coordination
+
+- title: Agentic AI & RAG prototypes
+  icon: spark
+  summary: Research-grade know-how on AI assistants that answer from your own documents — with citations and honest refusals.
+  points:
+    - Feasibility assessment and use-case selection
+    - Retrieval-augmented generation over document collections
+    - Multi-agent orchestration with verifiable answers
+    - Evaluation frameworks for accuracy and reliability

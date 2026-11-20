@@ -1,0 +1,44 @@
+---
+title: Services
+heading: Consulting &amp; freelance
+eyebrow: Services
+permalink: /services/
+description: Consulting by Milen Kraev — interim delivery and programme leadership, payments and card-scheme expertise, business analysis and agentic AI prototypes.
+lead: I help organisations in banking, payments and fintech get complex technology work over the line — and help document-heavy teams explore trustworthy AI assistants.
+---
+<section class="section-tight">
+  <div class="grid grid-2">
+    {% for s in site.data.services %}
+    <article class="card service">
+      {% include icon.html name=s.icon %}
+      <h3>{{ s.title }}</h3>
+      <p>{{ s.summary }}</p>
+      <ul class="check-list">
+        {% for p in s.points %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section-tight">
+  <h2 class="section-title">How an engagement works</h2>
+  <ol class="steps">
+    <li><h3>Discovery call</h3><p>A free 30-minute conversation about the goal, constraints and timeline.</p></li>
+    <li><h3>Proposal</h3><p>A short written scope with deliverables, milestones and a fixed or time-based price.</p></li>
+    <li><h3>Delivery</h3><p>Regular check-ins, transparent status reporting and early escalation of risks.</p></li>
+    <li><h3>Handover</h3><p>Documentation and knowledge transfer so your team can carry on independently.</p></li>
+  </ol>
+</section>
+
+<section class="section-tight">
+  <h2 class="section-title">Engagement models</h2>
+  <div class="grid grid-3">
+    <div class="card"><h3>Project-based</h3><p>A defined scope and outcome — e.g. a migration plan, a requirements package or an AI proof of concept.</p></div>
+    <div class="card"><h3>Advisory</h3><p>A few hours a month as a sounding board for delivery leads, PMOs or product teams.</p></div>
+    <div class="card"><h3>Workshops</h3><p>Half-day or full-day sessions on delivery governance, risk management or AI assistants over your own data.</p></div>
+  </div>
+  {% if site.business.name != "" %}
+    <p class="small muted">Services are provided through {{ site.business.name }}{% if site.business.registration != "" %} ({{ site.business.registration }}){% endif %}.</p>
+  {% endif %}
+</section>

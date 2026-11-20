@@ -1,0 +1,13 @@
+{% assign lim = include.limit | default: 1000 %}
+<ul class="post-list">
+  {% for post in site.posts limit: lim %}
+  <li class="post-item" data-category="{{ post.category | default: 'General' | slugify }}">
+    <p class="meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>
+      {% if post.category %}<span class="tag">{{ post.category }}</span>{% endif %}
+    </p>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.description | default: post.excerpt | strip_html | truncate: 200 }}</p>
+  </li>
+  {% endfor %}
+</ul>
