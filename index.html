@@ -6,7 +6,7 @@ title: Delivery lead in payments & fintech · PhD researcher in agentic AI
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="eyebrow">Payments · Fintech · Agentic AI research</p>
-      <h1>Complex technology programmes, turned into plans that deliver.</h1>
+      <h1>Complex technology programmes, turned into <span class="hl">plans that deliver.</span></h1>
       <p class="lead">
         I'm {{ site.author.name }}. I lead project and product delivery for payment platforms —
         core banking migrations, Visa and Mastercard deliveries, PCI-DSS compliance — and I'm completing
@@ -24,6 +24,13 @@ title: Delivery lead in payments & fintech · PhD researcher in agentic AI
         <a class="btn btn-primary" href="{{ '/about/' | relative_url }}">Experience &amp; CV {% include icon.html name='arrow' %}</a>
         <a class="btn" href="{{ '/services/' | relative_url }}">Work with me</a>
         <a class="btn btn-ghost" href="{{ '/research/' | relative_url }}">Research</a>
+      </div>
+
+      <div class="icon-row">
+        <a class="icon-btn" href="{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name='linkedin' %}</a>
+        <a class="icon-btn" href="mailto:{{ site.author.email }}" aria-label="Email" title="Email">{% include icon.html name='mail' %}</a>
+        {% if site.author.cv != "" %}<a class="icon-btn" href="{{ site.author.cv | relative_url }}" download aria-label="Download CV" title="Download CV">{% include icon.html name='download' %}</a>{% endif %}
+        <span class="label">{{ site.author.location }}</span>
       </div>
     </div>
 
