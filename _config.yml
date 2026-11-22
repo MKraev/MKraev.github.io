@@ -30,7 +30,7 @@ author:
   scholar: ""       # Google Scholar profile URL
   researchgate: ""
   # Put the files in assets/ and uncomment / fill in:
-  photo: ""         # e.g. /assets/img/profile.jpg  (square, ~600x600)
+  photo: /assets/img/profile.jpg   # square; replace the file with a larger one (~600x600) for sharper display
   cv: ""            # e.g. /assets/files/Milen_Kraev_Resume.pdf
 
 # Status badges shown on the home page. Set enabled: false to hide.
@@ -68,6 +68,10 @@ plugins:
 feed:
   path: feed.xml
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/profile.jpg   # preview image when links are shared
   - scope:
       path: ""
       type: posts
